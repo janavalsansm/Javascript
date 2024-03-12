@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>.JavaScript variables</h1>
+    <p id="about"> </p>
+    <p id="ways"></p>
+        
+     
+    <h2>.Operators</h2>
+    <h3>#.assignment operator:</h3>
+    <p id="assign"></p>
+
+    <h2>#.JavaScript Arithmetic</h2>
+    <h2>a=10 b=5</h2>
+     <h3>The +addition Operator</h3>
+     <p id="arithematic"></p>
+
+     <h3>The - subtaction Operator</h3>
+     <p id="sub"></p>
+
+     <h3>The * multiplication Operator</h3>
+     <p id="multi"></p>
+
+     
+     <h3>The / division Operator</h3>
+     <p id="div"></p>
+
+     
+     <h3>The % Reminder Operator</h3>
+     <p id="reminder"></p>
+
+     <h3>The ** exponent Operator</h3>
+     <p id="exp"></p>
+
+
+     <h2>.JavaScript functions</h2>
+     <h3>#.function calling</h3>
+     <p>Click the following button to call the function</p>
+     <form>
+        <input type="button" onclick="sayHello()" value="Say Hello">
+     </form>
+
+     <h3>#.function return</h3>
+     <p>Call a function which performs a calculation and returns the result:</p>
+      <p id="demo"></p>
+
+      <h2>.flow control</h2>
+      <p id="flow"></p>
+
+      <h2>.JavaScript Loop</h2>
+      <h3>#.for Loop</h3>
+      <p id="for"></p>
+
+      <h3>#.while loop</h3>
+      <p id="while"></p>
+
+      <h3>#.do while loop</h3>
+      <p id="dowhile"></p>
+
+    <script>
+        // variables//
+        var about = " #.JavaScript Variables can be declared in 4 ways:";
+        document.getElementById("about").innerHTML = about;
+        var l1 = "Automatically"
+        var l2 = "Using var"
+        var l3 = "Using let"
+        var l4 = "Using const"
+        document.getElementById("ways").innerHTML = l1 + "<br>" +l2 + "<br>" +l3 + "<br>" +l4;
+
+
+        // operators//
+        let x = 5;
+        let y = 6;
+        let z = x + y;
+        document.getElementById("assign").innerHTML = "the sum of x+y is :" +z;
+        document.getElementById("arithematic").innerHTML = z ;
+
+        let a = 10;
+        let b = 5;
+        let c = a*b;
+        let d = a-b;
+        let A = a/b;
+        let B = a%b;
+        // multiplication
+        document.getElementById("multi").innerHTML =  c;
+        // subtraction
+        document.getElementById("sub").innerHTML =  d;
+        // division
+        document.getElementById("div").innerHTML =  A;
+        // reminder
+        document.getElementById("reminder").innerHTML =  B;
+        // reminder
+        document.getElementById("exp").innerHTML =  a ** 2;   
+
+        //  functions
+        function sayHello() {
+         alert("Hello there!");
+      }
+      let X = myFunction(4, 3);
+      document.getElementById("demo").innerHTML = X;
+
+      function myFunction(a, b) {
+      return a * b;
+      }
+        
+
+    //  flow control
+
+    let i = 7;
+    let j = 7;
+    let value;
+    if (i<j){
+        value = "i is lessthan j";
+    }
+    else if(i>j){
+        value = "i is less than j";
+
+    }
+    else{
+        value = "i is equal to j";
+    }
+    document.getElementById("flow").innerHTML = value;
+
+
+    // for lop//
+    let text = "";
+     for (let i = 5; i <= 10; i++) {
+    text += "The number is " + i + "<br>";
+    }
+    document.getElementById("for").innerHTML = text;
+
+
+    // while loop and do wile//
+    
+    let text1 = "";
+    let k = 0;
+    while (k < 10) {
+    text1 += "<br>The number is " + k;
+    k++;
+    }
+    document.getElementById("while").innerHTML = text1;
+
+    let text2 = "";
+    let h = 0;
+   do  {
+    text2 += "<br>The number is " + h;
+    h++;
+    }
+    while(h<8)
+    document.getElementById("dowhile").innerHTML = text2;
+
+    </script>
+
+</body>
+</html>
