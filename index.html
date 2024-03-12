@@ -62,6 +62,17 @@
       <h3>#.do while loop</h3>
       <p id="dowhile"></p>
 
+      <h2>. JavaScript events</h2>
+      <button onclick="displayDate()">The time is?</button>
+      <p id="event"></p>
+
+
+      <h2>.Array</h2>
+      <p id="array"></p>
+
+      <h3>changing array element</h3>
+      <p id="change"></p>
+
     <script>
         // variables//
         var about = " #.JavaScript Variables can be declared in 4 ways:";
@@ -154,7 +165,23 @@
     while(h<8)
     document.getElementById("dowhile").innerHTML = text2;
 
+    // events
+    function displayDate() {
+  document.getElementById("event").innerHTML = Date();
+}
+
+    // array
+    const Languages = ["HTML", "CSS", "JS"];
+    document.getElementById("array").innerHTML = Languages;
+    // array element change
+    const Languages2 = ["HTML", "CSS", "JS"];
+    Languages2[2]="Bootstrap"
+    document.getElementById("change").innerHTML = Languages2;
+
+
+
     </script>
+   
 
 </body>
 </html>
