@@ -84,7 +84,10 @@
 
       <h2>.location object:</h2>
       <h3>#.assign</h3>
-      <button onclick="assignlocation()">to form validation page</button>
+      <button onclick="assignlocation()">to Bootstrap</button><br><br>
+
+      <h3>#.host</h3>
+      <p id="host"></p>
 
     <script>
         // variables//
@@ -206,6 +209,11 @@
     function assignlocation(){
       location.assign("https://getbootstrap.com/")
     }
+
+    //location host//
+
+    let host = location.host;
+    document.getElementById("host").innerHTML = host;
 
 
 
