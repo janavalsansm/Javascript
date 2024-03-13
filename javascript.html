@@ -89,6 +89,18 @@
       <h3>#.host</h3>
       <p id="host"></p>
 
+      <h2>String</h2>
+      
+      <p>janavalsan:</p>
+      <h3>string length: </h3>
+      <p id="strlen"></p>
+      <h3>string charAt:</h3>
+      <p id="charat"></p>
+      <h3>string at:</h3>
+      <p id="at"></p>
+      <h3>string to uppercase:</h3>
+      <p id="uppercase"></p>
+
     <script>
         // variables//
         var about = " #.JavaScript Variables can be declared in 4 ways:";
@@ -214,6 +226,21 @@
 
     let host = location.host;
     document.getElementById("host").innerHTML = host;
+
+    // string length//
+    let m = "janavalsan";
+    let letter = m[2];
+    document.getElementById("strlen").innerHTML = m.length;
+    // string charat
+    document.getElementById("charat").innerHTML = m.charAt(1);
+    // string at
+    document.getElementById("at").innerHTML =letter;
+    // uppercase
+    document.getElementById("uppercase").innerHTML =m.toUpperCase();
+
+
+
+
 
 
 
