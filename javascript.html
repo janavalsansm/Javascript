@@ -73,6 +73,19 @@
       <h3>changing array element</h3>
       <p id="change"></p>
 
+      <h2>.Form object</h2>
+      <form id="fobject">
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstname" name="firstname"><br>
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastname" name="lastname"><br>
+        <button type="button" onclick="submitform()">Submit</button>
+      </form>
+
+      <h2>.location object:</h2>
+      <h3>#.assign</h3>
+      <button onclick="assignlocation()">to form validation page</button>
+
     <script>
         // variables//
         var about = " #.JavaScript Variables can be declared in 4 ways:";
@@ -177,6 +190,22 @@
     const Languages2 = ["HTML", "CSS", "JS"];
     Languages2[2]="Bootstrap"
     document.getElementById("change").innerHTML = Languages2;
+
+
+    // form object//
+    function submitform() {
+
+      var form = document.getElementById("fobject");
+      var firstnameValue = form.elements.firstname.value;
+      var lastnameValue = form.elements.lastname.value;
+      alert("First name: " + firstnameValue + "\nLast name: " + lastnameValue);
+
+    }
+
+    // location assign//
+    function assignlocation(){
+      location.assign("https://getbootstrap.com/")
+    }
 
 
 
